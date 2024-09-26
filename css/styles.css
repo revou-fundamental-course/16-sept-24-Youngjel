@@ -1,1 +1,80 @@
 /* Ini CSS */
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline {
+    display: inline;
+}
+
+nav {
+    display: flex;
+}
+
+nav>a {
+    border: 1px solid;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+}
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.photo-banner {
+    background-position: center;
+    background-size: cover;
+    height: 480px;
+}
+
+.photo-1 {
+    background-image: url(../assets/foto1.jpg);
+}
+
+.photo-2 {
+    background-image: url(../assets/Foto2.jpg);
+}
+
+.photo-3 {
+    background-image: url(../assets/Foto3.jpg);
+}
+
+.profile-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/foto1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.profile-icon-container {
+    display: flex;
+}
+
+.profile-icon-container>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form.container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@media only screen and (max-width: 375px) {
+    .main-header (
+        flex-direction: column;
+    )
+}
