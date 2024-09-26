@@ -32,7 +32,7 @@
             </header>
 
             <article>
-                <p>Lorem Ipsum Dolor Sit Amet Adipiscing</p>
+                <p>Get to Know More about me</p>
             
                 <!-- Photo Banner -->
                  <div class="photo-banner photo-1"></div>
@@ -46,18 +46,18 @@
         <!-- Our Profile -->
         <section id="section-our-profile">
             <header>
-                <h1>Our Profile</h1>
+                <h1>My Profile</h1>
             </header>
                 
             <div class="profile-icon-container">
                 <div>
                     <div class="profile-icon"></div>
-                    <h4>Profile 1</h4>
+                    <h4>Born in Bandung, West Java. On December 8, 2001.</h4>
             </div>
 
             <div>
                 <div class="profile-icon"></div>
-                <h4>Profile 1</h4>
+                <h4>Bachelor of Physics graduate from Diponegoro University (2024).</h4>
             </div>
         </section>
 
@@ -67,6 +67,14 @@
         <section id="section-portofolio">
             <header>
                 <h1>Portofolio</h1>
+                <ul>
+                    <li>MSIB BMKG Geophysical Station Banjarnegara | Asesor (Aug 2023 – Dec 2023)</li>
+                    <li>Math and Physics Tentor of Neo Edukasi and Bimbel Antuasias Semarang (Feb 2023 – Aug 2023)</li>
+                    <li>RSUP DR Kariadi Semarang | Medical Physics (Jan 2023 – Feb 2023)</li>
+                    <li>Laboratory Assistant (Aug 2022 – Dec 2022)</li>
+                    <li>Head of  academic division research of BEM FSM Universitas Diponegoro (Feb 2022 – Dec 2022)</li>
+                    <li>Research Project and Funding Student Creativity Program (PKM) (Jun 2021 – Dec 2021 )</li>
+                </ul>
             </header>
         </section>
 
@@ -77,18 +85,39 @@
             <header>
                 <h1>Message Us</h1>
             </header>
-
+              
             <section class="form-container">
                 <!-- Form -->
-                <form onsubmit="return false;">
-                    <div>
-                        <label for="input-name">Nama:</label>
-                        <input type="text" id="input-name"/>
-                    </div>
-
-                    <button type="submit" onclick="validateForm()">Submit</button>
-                </form>
-
+                <form name="message-form" onsubmit="return validateForm()">
+                    <label for="full-name">Nama:</label>
+                    <input type="text" id="full-name" name="full-name" placeholder="Nama">
+                    <br>
+                  
+                    <label for="birth-date">Tanggal Lahir:</label>
+                    <input type="date" id="birth-date" name="birth-date">
+                    <br>
+                  
+                    <label>Jenis Kelamin:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Laki-laki</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Perempuan</label>
+                    <br>
+                  
+                    <label for="messages">Pesan:</label>
+                    <textarea id="messages" name="messages" placeholder="Pesan"></textarea>
+                    <br>
+                  
+                    <input type="submit" value="Submit">
+                  </form>
+                  
+                  <div>
+                    <p>Nama: <span id="sender-full-name"></span></p>
+                    <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                    <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                    <p>Pesan: <span id="sender-messages"></span></p>
+                  </div>
+                  
                 <!-- Result Form -->
                 <div>
                     <p>Result Form: <span id="result-form"></span></p>

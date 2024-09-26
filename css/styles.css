@@ -24,7 +24,7 @@ nav>a {
 .logo-icon {
     height: 50px;
     width: 50px;
-    background-image: url(../assets/foto1.jpg);
+    background-image: url(../assets/Logo.png);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -37,7 +37,7 @@ nav>a {
 }
 
 .photo-1 {
-    background-image: url(../assets/foto1.jpg);
+    background-image: url(../assets/Foto1.jpg);
 }
 
 .photo-2 {
@@ -51,7 +51,7 @@ nav>a {
 .profile-icon {
     height: 50px;
     width: 50px;
-    background-image: url(../assets/foto1.jpg);
+    background-image: url(../assets/Foto1.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -73,6 +73,8 @@ nav>a {
     align-items: center;
 }
 
+/* max-width akan menerapkan style di bawah ukuran yang di tentukan 
+min-width akan menerapkan style di atas ukuran yang di tentukan */
 @media only screen and (max-width: 375px) {
     .main-header (
         flex-direction: column;
